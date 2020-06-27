@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApp3
+namespace DataEditor
 {
     /// <summary>
     /// Логика взаимодействия для NewStudent.xaml
@@ -29,6 +29,7 @@ namespace WpfApp3
 
         public NewStudent()
         {
+            this.Resources["NewStudent"] = new Student();
             InitializeComponent();
         }
 

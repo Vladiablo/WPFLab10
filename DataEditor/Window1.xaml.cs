@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 using System.Xml.Serialization;
 using System.Xml;
 
-namespace WpfApp3
+namespace DataEditor
 {
     /// <summary>
     /// Логика взаимодействия для Window1.xaml
@@ -50,8 +50,8 @@ namespace WpfApp3
             openFileDialog.Filter = "XML Files|*.xml|All Files|*.*";
 
             dataSource = new StringDataSource();
-            dataSource.data.Add(new Student("Anna"));
-            dataSource.data.Add(new Student("Boris")); 
+            dataSource.data.Add(new Student("Ivanov", "Ivan", "Ivanovich", new DateTime(2020, 9, 1)));
+            dataSource.data.Add(new Student("Ivanova", "Anna", "Vladimirovna", new DateTime(2020, 10, 1)));
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
